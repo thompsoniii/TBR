@@ -6,6 +6,12 @@ import sys
 import xml.etree.ElementTree as ET
 import matplotlib.pyplot as plt
 import subprocess
+from openmc_plasma_source import TokamakSource
+from openmc_source_plotter import plot_source_direction, plot_source_position
+
+
+openmc.config["cross_sections"] = '/home/kthompson309/Desktop/Senior_Design/endfb-viii.0-hdf5/cross_sections.xml'
+
 
 # ==============================================================================
 # Geometry
@@ -21,7 +27,7 @@ def create_arc(Li6_enrichment):
     plot.width = (700, 800)
     plot.pixels = (plot.width[0]*10, plot.width[1]*10)
     
-    color = ['beige', 'lightcoral', 'yellow', 'orange', 'lime', 'navy', 'lightcyan', 'black']
+    color = ['beige', 'lightcoral', 'yellow', 'orange', 'lime', 'navy', 'lightcyan', 'black', 'salmon', 'magenta', 'green']
     color_dict = {cell.id: color[i] for i, cell in enumerate(device._cells)}
     plot.colors = color_dict
     for count, cell in enumerate(device._cells):
@@ -37,12 +43,53 @@ def create_arc(Li6_enrichment):
     # ==============================================================================
     
     """ Source Definition """
-    source = openmc.Source()
-    source.space = openmc.stats.CylindricalIndependent(openmc.stats.Discrete(400, 1), openmc.stats.Uniform(a=-np.pi/18, b=np.pi/18), openmc.stats.Discrete(0, 1)) # original openmc.stats.Discrete(450, 1), openmc.stats.Uniform(a=-np.pi/18, b=np.pi/18)
-    source.angles = openmc.stats.Isotropic()
-    source.energy = openmc.stats.Discrete([14.1E6], [1.0])
+    my_sources = TokamakSource(
+    elongation=1.84, # jball code says 1.5
+    ion_density_centre=1.8e20,# paper
+    ion_density_peaking_factor=1,
+    ion_density_pedestal=1.09e20,
+    ion_density_separatrix=3e19,
+    ion_temperature_centre=27,# paper
+    ion_temperature_peaking_factor=8.06,
+    ion_temperature_pedestal=6.09,
+    ion_temperature_separatrix=0.1,
+    major_radius=3.3,#4.0 jball in code
+    minor_radius=1.15, #1.2 jball in code
+    pedestal_radius=0.8 * 1.2,# jball
+    mode="H",
+    shafranov_factor=0.44789,# good enough
+    triangularity=0.5,# jball
+    ion_temperature_beta=6,
+    sample_size=50,  # the number of individual sources to use to make a combined source
+    # angles=( -3.141592 / 18 , 3.141592 / 18)  # angle in radians
+    angles=(0.001, 2*3.14195-.001)
+    ).make_openmc_sources()  # returns a list of openmc sources
+    # source = openmc.Source()
+    # source.space = openmc.stats.CylindricalIndependent(openmc.stats.Discrete(400, 1), openmc.stats.Uniform(a=-np.pi/18, b=np.pi/18), openmc.stats.Discrete(0, 1)) # original openmc.stats.Discrete(450, 1), openmc.stats.Uniform(a=-np.pi/18, b=np.pi/18)
+    # source.angles = openmc.stats.Isotropic()
+    # source.energy = openmc.stats.Discrete([14.1E6], [1.0])
+
+
+    # this is example code to plot the source
+    # settings = openmc.Settings()
+    # settings.particles = 1
+    # settings.batches = 1
+    # settings.source = my_sources
+    # materials = openmc.Materials()
+    # sph = openmc.Sphere(r=1000000, boundary_type="vacuum")
+    # cell = openmc.Cell(region=-sph)
+    # geometry = openmc.Geometry([cell])
+    # model = openmc.Model(geometry, materials, settings)
+
+    # plot = plot_source_position(this=model, n_samples=2000)
+    # plot.show()
+    # # plot.savefig('source_position.png')
+
+    # plot = plot_source_direction(this=model, n_samples=500)
+    # plot.show()
+    # # plot.savefig('source_direction.png')`
     
-    device.settings.source = source
+    device.settings.source = my_sources
     # energy filter
     # energy_filter = openmc.EnergyFilter.from_group_structure("CCFE-709")
     # ==============================================================================
@@ -97,7 +144,7 @@ def create_arc(Li6_enrichment):
     #openmc.plot_geometry()
     
     # set run parameters
-    device.settings.threads = 10
+    # device.settings.threads = 10
     device.settings.particles = int(1e3)
     device.settings.batches = 10  
     device.settings.inactive = 1  
