@@ -6,11 +6,12 @@ import sys
 import xml.etree.ElementTree as ET
 import matplotlib.pyplot as plt
 import subprocess
+import pandas as pd
 from openmc_plasma_source import TokamakSource
 from openmc_source_plotter import plot_source_direction, plot_source_position
 
 
-openmc.config["cross_sections"] = '/home/kthompson309/Desktop/Senior_Design/endfb-viii.0-hdf5/cross_sections.xml'
+openmc.config["cross_sections"] = '/home/hice1/kthompson309/endfb-viii.0-hdf5/cross_sections.xml'
 
 
 # ==============================================================================
@@ -144,10 +145,12 @@ def create_arc(Li6_enrichment):
     #openmc.plot_geometry()
     
     # set run parameters
-    # device.settings.threads = 10
-    device.settings.particles = int(1e3)
+    device.settings.threads = 24
+    device.settings.particles = int(1e5)
     device.settings.batches = 10  
     device.settings.inactive = 1  
+    
+    # device.settings.mpi_args = ['mpiexec', '-n', '24']
     #remove old output files
     # for file in os.listdir('.'):
     #     if file.endswith('.h5'):
@@ -173,9 +176,9 @@ def make_materials_geometry_tallies(Li6_enrichment):
     print(device.Li6_enrichment)
     
     #remove old output files
-    for file in os.listdir('.'):
-        if file.endswith('.h5'):
-            os.remove(file)
+    #for file in os.listdir('.'):
+    #    if file.endswith('.h5'):
+    #        os.remove(file)
     sp_filename = device.run(output = False)  # runs with reduced amount of output printing
 
     # OPEN OUPUT FILE
@@ -197,20 +200,28 @@ def make_materials_geometry_tallies(Li6_enrichment):
             'tbr_tally_result': tbr_tally_result,
             'tbr_tally_std_dev': tbr_tally_std_dev}
 
-results = []
-for enrichment in [0.01, 7.5, 15, 25, 50, 75, 99.99]:  # percentage enrichment from 0% Li6 to 100% Li6
-    results.append(make_materials_geometry_tallies(enrichment))
-print(results)
+#results = []
+#for enrichment in [0.01, 7.5, 15, 25, 50, 75, 99.99]:  # percentage enrichment from 0% Li6 to 100% Li6
+#    results.append(make_materials_geometry_tallies(enrichment))
+#print(results)
 #results.append(make_materials_geometry_tallies(7.5))
 # PLOTS RESULTS
-x = [entry['enrichment'] for entry in results]
-y = [entry['tbr_tally_result'] for entry in results]
+#x = [entry['enrichment'] for entry in results]
+#y = [entry['tbr_tally_result'] for entry in results]
 #error_y = {'array': [entry['tbr_tally_std_dev'] for entry in results]}
-plt.plot(x, y)
-plt.title="TBR as a function of Li6 enrichment",
-plt.xtitle="Li6 enrichment (%)",
-plt.ytitle="TBR"
-plt.show()
+
+
+
+result = make_materials_geometry_tallies(float(sys.argv[1]))
+np.save(f'enrichment_{float(sys.argv[1])}.npy', result)
+# read_dictionary = np.load('enrichment_7.5.npy',allow_pickle='TRUE').item()
+# df = pd.DataFrame(data=result)
+#df.to_csv(f'/home/hice1/kthompson309/TBR/output_df/enrichment_{sys.argv[1]}')
+#plt.plot(x, y)
+#plt.title="TBR as a function of Li6 enrichment",
+#plt.xtitle="Li6 enrichment (%)",
+#plt.ytitle="TBR"
+#plt.show()
 # ================================================================================
 try:
     if sys.argv[1] is not None:

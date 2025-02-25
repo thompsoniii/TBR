@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <settings>
   <run_mode>fixed source</run_mode>
-  <source particle="neutron" strength="0.015721240620933687" type="independent">
+  <source particle="neutron" strength="0.01572124062093372" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.2211772254835056 1.0</parameters>
@@ -14,7 +14,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 9984.765156027359" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.00046906124855107415" type="independent">
+  <source particle="neutron" strength="0.0004690612485510743" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>4.430895407964169 1.0</parameters>
@@ -27,7 +27,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5708.896956134745" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03766579963764086" type="independent">
+  <source particle="neutron" strength="0.03766579963764081" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.7521177756327075 1.0</parameters>
@@ -38,9 +38,9 @@
       </z>
     </space>
     <angle type="isotropic"/>
-    <energy parameters="14080000.0 12331.423275489426" type="normal"/>
+    <energy parameters="14080000.0 12331.423275489424" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.000986522742375085" type="independent">
+  <source particle="neutron" strength="0.0009865227423750853" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>4.230711709805094 1.0</parameters>
@@ -53,7 +53,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 6022.396448077546" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.030522632156234523" type="independent">
+  <source particle="neutron" strength="0.03052263215623453" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>4.049305961691024 1.0</parameters>
@@ -66,7 +66,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12031.32200242269" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.0005505186538879846" type="independent">
+  <source particle="neutron" strength="0.0005505186538879839" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>2.5716127494023766 1.0</parameters>
@@ -79,7 +79,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5805.0584952679255" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.0006047770221922248" type="independent">
+  <source particle="neutron" strength="0.0006047770221922249" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>2.912857265591916 1.0</parameters>
@@ -92,7 +92,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5856.524566669742" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.0008774866842942377" type="independent">
+  <source particle="neutron" strength="0.000877486684294238" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>4.081101265490784 1.0</parameters>
@@ -105,7 +105,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5942.90775852396" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.00046526708839672636" type="independent">
+  <source particle="neutron" strength="0.0004652670883967258" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>2.415628937571597 1.0</parameters>
@@ -118,7 +118,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5704.079570036183" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.017925690151885724" type="independent">
+  <source particle="neutron" strength="0.017925690151885717" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.527212547228593 1.0</parameters>
@@ -131,7 +131,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 10346.39305680063" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.025623366032275927" type="independent">
+  <source particle="neutron" strength="0.02562336603227593" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.9664911073963998 1.0</parameters>
@@ -144,7 +144,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 11474.112056684642" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.0007599210345620272" type="independent">
+  <source particle="neutron" strength="0.0007599210345620274" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>2.6629456635672333 1.0</parameters>
@@ -157,7 +157,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5871.87500812624" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03278247123523896" type="independent">
+  <source particle="neutron" strength="0.03278247123523897" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.970641878102821 1.0</parameters>
@@ -170,7 +170,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12207.566632254737" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.000704122461476005" type="independent">
+  <source particle="neutron" strength="0.0007041224614760051" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>2.67032919821444 1.0</parameters>
@@ -183,7 +183,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5858.089461771602" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.036729677178716114" type="independent">
+  <source particle="neutron" strength="0.0367296771787161" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.8955412961025893 1.0</parameters>
@@ -196,7 +196,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12330.212538365537" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03625317486570597" type="independent">
+  <source particle="neutron" strength="0.03625317486570598" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.568838417183173 1.0</parameters>
@@ -209,7 +209,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12327.342470228517" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.032158367854935886" type="independent">
+  <source particle="neutron" strength="0.03215836785493588" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.9422770956618844 1.0</parameters>
@@ -220,9 +220,9 @@
       </z>
     </space>
     <angle type="isotropic"/>
-    <energy parameters="14080000.0 12165.786796924203" type="normal"/>
+    <energy parameters="14080000.0 12165.786796924202" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.0030491760282097243" type="independent">
+  <source particle="neutron" strength="0.003049176028209724" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.4613192834177497 1.0</parameters>
@@ -235,7 +235,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 7111.234333206971" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.034313916148186734" type="independent">
+  <source particle="neutron" strength="0.03431391614818675" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.8080284228655588 1.0</parameters>
@@ -248,7 +248,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12284.34988350829" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.0004757696256341284" type="independent">
+  <source particle="neutron" strength="0.00047576962563412764" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.2817154187323285 1.0</parameters>
@@ -261,7 +261,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5717.333647021928" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.029523628238928675" type="independent">
+  <source particle="neutron" strength="0.02952362823892866" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.24053772612209 1.0</parameters>
@@ -274,7 +274,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 11933.967882898472" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03669580524413763" type="independent">
+  <source particle="neutron" strength="0.036695805244137646" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.581411532100586 1.0</parameters>
@@ -287,7 +287,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12330.077848293624" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.034558621410809925" type="independent">
+  <source particle="neutron" strength="0.03455862141080994" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.9377982011454544 1.0</parameters>
@@ -300,7 +300,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12293.043670667073" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.006492793705119922" type="independent">
+  <source particle="neutron" strength="0.006492793705119926" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>2.8991898627925448 1.0</parameters>
@@ -311,9 +311,9 @@
       </z>
     </space>
     <angle type="isotropic"/>
-    <energy parameters="14080000.0 8158.063373330061" type="normal"/>
+    <energy parameters="14080000.0 8158.06337333006" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.01625833861875844" type="independent">
+  <source particle="neutron" strength="0.016258338618758444" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.0188390158311096 1.0</parameters>
@@ -326,7 +326,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 10074.53283519979" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.034426423349091885" type="independent">
+  <source particle="neutron" strength="0.0344264233490919" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.4907300737409965 1.0</parameters>
@@ -337,9 +337,9 @@
       </z>
     </space>
     <angle type="isotropic"/>
-    <energy parameters="14080000.0 12288.470972072142" type="normal"/>
+    <energy parameters="14080000.0 12288.47097207214" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.000947920386960371" type="independent">
+  <source particle="neutron" strength="0.0009479203869603715" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>4.3301415412326 1.0</parameters>
@@ -352,7 +352,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5993.988564798217" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03719534362797955" type="independent">
+  <source particle="neutron" strength="0.03719534362797953" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.6850488296483146 1.0</parameters>
@@ -365,7 +365,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12331.267285348717" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03692762225778328" type="independent">
+  <source particle="neutron" strength="0.036927622257783246" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.589937196821572 1.0</parameters>
@@ -378,7 +378,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12330.825898394618" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.028944834688815063" type="independent">
+  <source particle="neutron" strength="0.028944834688815067" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.9079257477541725 1.0</parameters>
@@ -391,7 +391,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 11873.087490172264" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.0004713960427353351" type="independent">
+  <source particle="neutron" strength="0.0004713960427353345" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>2.764723542257579 1.0</parameters>
@@ -404,7 +404,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5711.844895725541" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.030318788547663456" type="independent">
+  <source particle="neutron" strength="0.030318788547663466" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.649395600452667 1.0</parameters>
@@ -417,7 +417,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12012.30989142453" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03756465723752092" type="independent">
+  <source particle="neutron" strength="0.03756465723752091" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.746397177997709 1.0</parameters>
@@ -428,9 +428,9 @@
       </z>
     </space>
     <angle type="isotropic"/>
-    <energy parameters="14080000.0 12331.421629923212" type="normal"/>
+    <energy parameters="14080000.0 12331.42162992321" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.0007324930062880129" type="independent">
+  <source particle="neutron" strength="0.0007324930062880132" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>2.671580509013111 1.0</parameters>
@@ -443,7 +443,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5862.796555926301" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.037668077904176755" type="independent">
+  <source particle="neutron" strength="0.03766807790417676" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.7508100631037156 1.0</parameters>
@@ -469,7 +469,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 11783.284758582953" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03381509460561368" type="independent">
+  <source particle="neutron" strength="0.03381509460561364" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.424721014410017 1.0</parameters>
@@ -480,9 +480,9 @@
       </z>
     </space>
     <angle type="isotropic"/>
-    <energy parameters="14080000.0 12263.536567270081" type="normal"/>
+    <energy parameters="14080000.0 12263.53656727008" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03748649821722606" type="independent">
+  <source particle="neutron" strength="0.03748649821722607" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.817232634760712 1.0</parameters>
@@ -495,7 +495,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12331.414407522874" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.00883276717006203" type="independent">
+  <source particle="neutron" strength="0.008832767170062032" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>4.177918907888762 1.0</parameters>
@@ -508,7 +508,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 8696.681960870492" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.0372948727779502" type="independent">
+  <source particle="neutron" strength="0.03729487277795021" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.643994870520322 1.0</parameters>
@@ -521,7 +521,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12331.346463966858" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03517145297937688" type="independent">
+  <source particle="neutron" strength="0.03517145297937686" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.8793805419035547 1.0</parameters>
@@ -534,7 +534,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12310.482616892006" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.006869820998314274" type="independent">
+  <source particle="neutron" strength="0.006869820998314276" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>2.96392433799444 1.0</parameters>
@@ -560,7 +560,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5668.333272772376" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.0004966269895993159" type="independent">
+  <source particle="neutron" strength="0.0004966269895993161" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.130240494088589 1.0</parameters>
@@ -573,7 +573,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5742.931322139341" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.02465816933133299" type="independent">
+  <source particle="neutron" strength="0.024658169331333" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.1397687133373435 1.0</parameters>
@@ -586,7 +586,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 11345.721437784217" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.000560497386451119" type="independent">
+  <source particle="neutron" strength="0.0005604973864511183" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.0950044980648035 1.0</parameters>
@@ -599,7 +599,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 5815.988733991247" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.02590677638291951" type="independent">
+  <source particle="neutron" strength="0.025906776382919522" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.1951413679324623 1.0</parameters>
@@ -625,7 +625,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 8464.916987782939" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03752047374164231" type="independent">
+  <source particle="neutron" strength="0.037520473741642336" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.6791134644303702 1.0</parameters>
@@ -638,7 +638,7 @@
     <angle type="isotropic"/>
     <energy parameters="14080000.0 12331.418506266933" type="normal"/>
   </source>
-  <source particle="neutron" strength="0.03766464925827067" type="independent">
+  <source particle="neutron" strength="0.03766464925827065" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r type="discrete">
         <parameters>3.7369244258405567 1.0</parameters>

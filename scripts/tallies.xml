@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <tallies>
-  <mesh id="7" type="cylindrical">
+  <mesh id="1" type="cylindrical">
     <r_grid>0.0 25.0 50.0 75.0 100.0 125.0 150.0 175.0 200.0 225.0 250.0 275.0 300.0 325.0 350.0 375.0 400.0 425.0 450.0 475.0 500.0 525.0 550.0 575.0 600.0</r_grid>
     <phi_grid>0.0 0.17453292519943295</phi_grid>
     <z_grid>-700.0 -671.4285714285714 -642.8571428571429 -614.2857142857142 -585.7142857142857 -557.1428571428571 -528.5714285714286 -500.0 -471.42857142857144 -442.85714285714283 -414.2857142857143 -385.7142857142857 -357.1428571428571 -328.57142857142856 -300.0 -271.4285714285714 -242.85714285714283 -214.28571428571428 -185.71428571428567 -157.1428571428571 -128.57142857142856 -100.0 -71.42857142857144 -42.857142857142776 -14.28571428571422 14.285714285714334 42.85714285714289 71.42857142857144 100.0 128.57142857142867 157.14285714285722 185.71428571428578 214.28571428571433 242.8571428571429 271.42857142857144 300.0 328.57142857142867 357.1428571428571 385.7142857142858 414.28571428571445 442.8571428571429 471.42857142857156 500.0 528.5714285714287 557.1428571428571 585.7142857142858 614.2857142857144 642.8571428571429 671.4285714285716 700.0</z_grid>
     <origin>0.0 0.0 0.0</origin>
   </mesh>
-  <filter id="19" type="mesh">
-    <bins>7</bins>
+  <filter id="1" type="mesh">
+    <bins>1</bins>
   </filter>
-  <filter id="20" type="material">
-    <bins>55</bins>
+  <filter id="2" type="material">
+    <bins>13</bins>
   </filter>
-  <filter id="21" type="cell">
-    <bins>64</bins>
+  <filter id="3" type="cell">
+    <bins>10</bins>
   </filter>
-  <tally id="19" name="Mesh Tally">
-    <filters>19</filters>
+  <tally id="1" name="Mesh Tally">
+    <filters>1</filters>
     <scores>flux (n,Xt) heating-local absorption</scores>
   </tally>
-  <tally id="20" name="Tbr Channel Tally ">
-    <filters>20</filters>
+  <tally id="2" name="Tbr Channel Tally ">
+    <filters>2</filters>
     <nuclides>Li6 Li7</nuclides>
     <scores>(n,Xt)</scores>
   </tally>
-  <tally id="21" name="Tbr Blanket Tally">
-    <filters>21</filters>
+  <tally id="3" name="Tbr Blanket Tally">
+    <filters>3</filters>
     <nuclides>Li6 Li7</nuclides>
     <scores>(n,Xt)</scores>
   </tally>

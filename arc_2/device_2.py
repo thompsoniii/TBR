@@ -155,7 +155,7 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
 
     """ PFCs and Vacuum Vessel """
 
-    vv_points = np.loadtxt("/home/kthompson309/Desktop/Senior_Design/FLIBE/FLIBE/data/" + vv_file)
+    vv_points = np.loadtxt("/home/hice1/kthompson309/TBR/data/" + vv_file)
 
     pfc_polygon = openmc.model.Polygon(vv_points, basis='rz')
     vv_inner_edge = pfc_polygon.offset(0.3) #PFC
@@ -166,7 +166,7 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
 
     """ Blanket and Outer Blanket Tank """
 
-    blanket_points = np.loadtxt("/home/kthompson309/Desktop/Senior_Design/FLIBE/FLIBE/data/" + blanket_file)
+    blanket_points = np.loadtxt("/home/hice1/kthompson309/TBR/data/" + blanket_file)
 
     blanket_inner = openmc.model.Polygon(blanket_points, basis='rz')
     gap = blanket_inner.offset(1.0)
@@ -180,7 +180,7 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
     plasma, pfc, vv, channel, tank_inner, multiplier, salt, tank_outer, outside = regions #[*]
 
     # Read volume calc file
-    vol_calc_load = openmc.VolumeCalculation.from_hdf5('/home/kthompson309/Desktop/Senior_Design/FLIBE/FLIBE/data/arc-1_volumes.h5')
+    vol_calc_load = openmc.VolumeCalculation.from_hdf5('/home/hice1/kthompson309/TBR/data/arc-1_volumes.h5')
     flibe_volume = vol_calc_load.volumes[8].n
     channels_volume = vol_calc_load.volumes[5].n
 
@@ -238,11 +238,11 @@ def generate_device(dopant, dopant_mass, Li6_enrichment=7.5, vv_file='arc_vv.txt
     # ==============================================================================
 
     """ Source Definition """
-    source = openmc.Source()
-    source.space = openmc.stats.CylindricalIndependent(openmc.stats.Discrete(400, 1), openmc.stats.Uniform(a=0, b=2*np.pi), openmc.stats.Discrete(0, 1))
-    source.angles = openmc.stats.Isotropic()
-    source.energy = openmc.stats.Discrete([14.1E6], [1.0])
+    # source = openmc.Source()
+    # source.space = openmc.stats.CylindricalIndependent(openmc.stats.Discrete(400, 1), openmc.stats.Uniform(a=0, b=2*np.pi), openmc.stats.Discrete(0, 1))
+    #source.angles = openmc.stats.Isotropic()
+    # source.energy = openmc.stats.Discrete([14.1E6], [1.0])
 
-    device.settings.source = source
+    #device.settings.source = source
 
     return device

@@ -368,7 +368,7 @@ def get_mass_attenuation(material, energies):
     elements = material.get_elements()
     mu_material = np.zeros(len(energies))
     for element in elements:
-        photon_data = openmc.data.IncidentPhoton.from_hdf5(f"/home/kthompson309/Desktop/Senior_Design/endfb-viii.0-hdf5/photon/{element}.h5")
+        photon_data = openmc.data.IncidentPhoton.from_hdf5(f"/home/hice1/kthompson309/endfb-viii.0-hdf5/photon/{element}.h5")
         
         #total_xs_data = np.zeros(len(energies))
 
@@ -385,7 +385,7 @@ def get_mass_attenuation(material, energies):
 def extract_contact_dose_rate(material):
     # Data in this file retrieved from: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/air.html 
     # It has units of cm^2/g
-    air_mu_en = np.loadtxt("/home/kthompson309/Desktop/Senior_Design/FLIBE/FLIBE/data/air_muen.txt")
+    air_mu_en = np.loadtxt("/home/hice1/kthompson309/TBR/data/air_muen.txt")
     air_mu_en_energies = air_mu_en[:, 0]
     air_mu_en = air_mu_en[:, 2]
 
