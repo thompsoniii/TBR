@@ -2,6 +2,7 @@ import arc_2 as anp
 import openmc
 import numpy as np
 import os
+import time
 import sys
 import xml.etree.ElementTree as ET
 import matplotlib.pyplot as plt
@@ -63,7 +64,7 @@ def create_arc(Li6_enrichment):
     ion_temperature_beta=6,
     sample_size=50,  # the number of individual sources to use to make a combined source
     # angles=( -3.141592 / 18 , 3.141592 / 18)  # angle in radians
-    angles=(0.001, 2*3.14195-.001)
+    angles=(0.001, 3.14195 / 18)
     ).make_openmc_sources()  # returns a list of openmc sources
     # source = openmc.Source()
     # source.space = openmc.stats.CylindricalIndependent(openmc.stats.Discrete(400, 1), openmc.stats.Uniform(a=-np.pi/18, b=np.pi/18), openmc.stats.Discrete(0, 1)) # original openmc.stats.Discrete(450, 1), openmc.stats.Uniform(a=-np.pi/18, b=np.pi/18)
@@ -145,12 +146,12 @@ def create_arc(Li6_enrichment):
     #openmc.plot_geometry()
     
     # set run parameters
-    device.settings.threads = 24
-    device.settings.particles = int(1e5)
+    #device.settings.threads = 1 
+    device.settings.particles = int(1e6)
     device.settings.batches = 10  
     device.settings.inactive = 1  
     
-    # device.settings.mpi_args = ['mpiexec', '-n', '24']
+    # device.settings.mpi_args = ['mpiexec', '-np', '4']
     #remove old output files
     # for file in os.listdir('.'):
     #     if file.endswith('.h5'):
@@ -171,6 +172,7 @@ def make_materials_geometry_tallies(Li6_enrichment):
     Returns:
         resutsl (dict): simulation tally results for TBR along with the standard deviation and enrichment
     """
+    start_time = time.time()
     # RUN OPENMC
     device = create_arc(Li6_enrichment)
     print(device.Li6_enrichment)
@@ -179,7 +181,7 @@ def make_materials_geometry_tallies(Li6_enrichment):
     #for file in os.listdir('.'):
     #    if file.endswith('.h5'):
     #        os.remove(file)
-    sp_filename = device.run(output = False)  # runs with reduced amount of output printing
+    sp_filename = device.run(output = False, threads=24)  # runs with reduced amount of output printing
 
     # OPEN OUPUT FILE
     sp = openmc.StatePoint(sp_filename)
@@ -195,7 +197,7 @@ def make_materials_geometry_tallies(Li6_enrichment):
     # command = ["openmc-plot-mesh-tally", sp_filename]
     # # Run the command
     # subprocess.run(command)
-    
+    print(f'time: {start_time - time.time()}')
     return {'enrichment': device.Li6_enrichment,
             'tbr_tally_result': tbr_tally_result,
             'tbr_tally_std_dev': tbr_tally_std_dev}

@@ -42,23 +42,23 @@
       <nuclide ao="1.0" name="Be9"/>
     </material>
     <material depletable="true" id="13" name="doped flibe channels" volume="4688229.0">
-      <density units="g/cm3" value="1.9399999999999995"/>
+      <density units="g/cm3" value="1.94"/>
       <nuclide ao="0.0" name="U234"/>
       <nuclide ao="0.0" name="U235"/>
       <nuclide ao="0.0" name="U238"/>
       <nuclide ao="0.5714285714285715" name="F19"/>
-      <nuclide ao="0.02142857142857143" name="Li6"/>
-      <nuclide ao="0.26428571428571435" name="Li7"/>
+      <nuclide ao="0.05142857142857143" name="Li6"/>
+      <nuclide ao="0.2342857142857143" name="Li7"/>
       <nuclide ao="0.14285714285714288" name="Be9"/>
     </material>
     <material depletable="true" id="14" name="doped flibe blanket" volume="336962565.3333333">
-      <density units="g/cm3" value="1.9399999999999995"/>
+      <density units="g/cm3" value="1.94"/>
       <nuclide ao="0.0" name="U234"/>
       <nuclide ao="0.0" name="U235"/>
       <nuclide ao="0.0" name="U238"/>
       <nuclide ao="0.5714285714285715" name="F19"/>
-      <nuclide ao="0.02142857142857143" name="Li6"/>
-      <nuclide ao="0.26428571428571435" name="Li7"/>
+      <nuclide ao="0.05142857142857143" name="Li6"/>
+      <nuclide ao="0.2342857142857143" name="Li7"/>
       <nuclide ao="0.14285714285714288" name="Be9"/>
     </material>
     <material id="15" name="V-4Cr-4Ti VV">
@@ -501,7 +501,7 @@
   </geometry>
   <settings>
     <run_mode>fixed source</run_mode>
-    <particles>100000</particles>
+    <particles>1000000</particles>
     <batches>10</batches>
     <inactive>1</inactive>
     <source particle="neutron" strength="0.01572124062093372" type="independent">
@@ -509,7 +509,7 @@
         <r type="discrete">
           <parameters>3.2211772254835056 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>1.1095496259368967 1.0</parameters>
         </z>
@@ -522,7 +522,7 @@
         <r type="discrete">
           <parameters>4.430895407964169 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.0708794133962573 1.0</parameters>
         </z>
@@ -535,7 +535,7 @@
         <r type="discrete">
           <parameters>3.7521177756327075 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.01146407566784306 1.0</parameters>
         </z>
@@ -548,7 +548,7 @@
         <r type="discrete">
           <parameters>4.230711709805094 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.5230520543143498 1.0</parameters>
         </z>
@@ -561,7 +561,7 @@
         <r type="discrete">
           <parameters>4.049305961691024 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.2887167467226945 1.0</parameters>
         </z>
@@ -574,7 +574,7 @@
         <r type="discrete">
           <parameters>2.5716127494023766 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-1.5550957366057385 1.0</parameters>
         </z>
@@ -587,7 +587,7 @@
         <r type="discrete">
           <parameters>2.912857265591916 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>1.7536207731800533 1.0</parameters>
         </z>
@@ -600,7 +600,7 @@
         <r type="discrete">
           <parameters>4.081101265490784 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.8159275884528909 1.0</parameters>
         </z>
@@ -613,7 +613,7 @@
         <r type="discrete">
           <parameters>2.415628937571597 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>1.5919512961868312 1.0</parameters>
         </z>
@@ -626,7 +626,7 @@
         <r type="discrete">
           <parameters>3.527212547228593 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-1.0471591850221973 1.0</parameters>
         </z>
@@ -639,7 +639,7 @@
         <r type="discrete">
           <parameters>3.9664911073963998 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.557942094042318 1.0</parameters>
         </z>
@@ -652,7 +652,7 @@
         <r type="discrete">
           <parameters>2.6629456635672333 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.8807859843143517 1.0</parameters>
         </z>
@@ -665,7 +665,7 @@
         <r type="discrete">
           <parameters>3.970641878102821 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.3320526741651425 1.0</parameters>
         </z>
@@ -678,7 +678,7 @@
         <r type="discrete">
           <parameters>2.67032919821444 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-1.206362206443732 1.0</parameters>
         </z>
@@ -691,7 +691,7 @@
         <r type="discrete">
           <parameters>3.8955412961025893 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.08178562500056451 1.0</parameters>
         </z>
@@ -704,7 +704,7 @@
         <r type="discrete">
           <parameters>3.568838417183173 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.3449790662869366 1.0</parameters>
         </z>
@@ -717,7 +717,7 @@
         <r type="discrete">
           <parameters>3.9422770956618844 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.40428872129200694 1.0</parameters>
         </z>
@@ -730,7 +730,7 @@
         <r type="discrete">
           <parameters>3.4613192834177497 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>1.29231593239218 1.0</parameters>
         </z>
@@ -743,7 +743,7 @@
         <r type="discrete">
           <parameters>3.8080284228655588 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.4462328883809889 1.0</parameters>
         </z>
@@ -756,7 +756,7 @@
         <r type="discrete">
           <parameters>3.2817154187323285 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-1.823680012369112 1.0</parameters>
         </z>
@@ -769,7 +769,7 @@
         <r type="discrete">
           <parameters>3.24053772612209 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.3399312458517871 1.0</parameters>
         </z>
@@ -782,7 +782,7 @@
         <r type="discrete">
           <parameters>3.581411532100586 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.2322402845891061 1.0</parameters>
         </z>
@@ -795,7 +795,7 @@
         <r type="discrete">
           <parameters>3.9377982011454544 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.27287297937338606 1.0</parameters>
         </z>
@@ -808,7 +808,7 @@
         <r type="discrete">
           <parameters>2.8991898627925448 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.5070441773716956 1.0</parameters>
         </z>
@@ -821,7 +821,7 @@
         <r type="discrete">
           <parameters>3.0188390158311096 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.3920041642668865 1.0</parameters>
         </z>
@@ -834,7 +834,7 @@
         <r type="discrete">
           <parameters>3.4907300737409965 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.5360488455027423 1.0</parameters>
         </z>
@@ -847,7 +847,7 @@
         <r type="discrete">
           <parameters>4.3301415412326 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.18416825318899752 1.0</parameters>
         </z>
@@ -860,7 +860,7 @@
         <r type="discrete">
           <parameters>3.6850488296483146 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.22304194833449448 1.0</parameters>
         </z>
@@ -873,7 +873,7 @@
         <r type="discrete">
           <parameters>3.589937196821572 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.07546822921946275 1.0</parameters>
         </z>
@@ -886,7 +886,7 @@
         <r type="discrete">
           <parameters>3.9079257477541725 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.555843257753699 1.0</parameters>
         </z>
@@ -899,7 +899,7 @@
         <r type="discrete">
           <parameters>2.764723542257579 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-1.9731719543183117 1.0</parameters>
         </z>
@@ -912,7 +912,7 @@
         <r type="discrete">
           <parameters>3.649395600452667 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.7391739549208022 1.0</parameters>
         </z>
@@ -925,7 +925,7 @@
         <r type="discrete">
           <parameters>3.746397177997709 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.09430955288409167 1.0</parameters>
         </z>
@@ -938,7 +938,7 @@
         <r type="discrete">
           <parameters>2.671580509013111 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>1.082036998604009 1.0</parameters>
         </z>
@@ -951,7 +951,7 @@
         <r type="discrete">
           <parameters>3.7508100631037156 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.002804724989244935 1.0</parameters>
         </z>
@@ -964,7 +964,7 @@
         <r type="discrete">
           <parameters>3.291377202965332 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.7728229192682502 1.0</parameters>
         </z>
@@ -977,7 +977,7 @@
         <r type="discrete">
           <parameters>3.424721014410017 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.5008899254953543 1.0</parameters>
         </z>
@@ -990,7 +990,7 @@
         <r type="discrete">
           <parameters>3.817232634760712 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.02971616795229715 1.0</parameters>
         </z>
@@ -1003,7 +1003,7 @@
         <r type="discrete">
           <parameters>4.177918907888762 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.42958412977472166 1.0</parameters>
         </z>
@@ -1016,7 +1016,7 @@
         <r type="discrete">
           <parameters>3.643994870520322 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.12862293836074123 1.0</parameters>
         </z>
@@ -1029,7 +1029,7 @@
         <r type="discrete">
           <parameters>3.8793805419035547 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>0.3080807114924487 1.0</parameters>
         </z>
@@ -1042,7 +1042,7 @@
         <r type="discrete">
           <parameters>2.96392433799444 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.9497770068831917 1.0</parameters>
         </z>
@@ -1055,7 +1055,7 @@
         <r type="discrete">
           <parameters>2.2356246597439466 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.6650234456406232 1.0</parameters>
         </z>
@@ -1068,7 +1068,7 @@
         <r type="discrete">
           <parameters>3.130240494088589 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>1.8740153553081704 1.0</parameters>
         </z>
@@ -1081,7 +1081,7 @@
         <r type="discrete">
           <parameters>3.1397687133373435 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.383251707720757 1.0</parameters>
         </z>
@@ -1094,7 +1094,7 @@
         <r type="discrete">
           <parameters>3.0950044980648035 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-1.8016896043072124 1.0</parameters>
         </z>
@@ -1107,7 +1107,7 @@
         <r type="discrete">
           <parameters>3.1951413679324623 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.6507645316956941 1.0</parameters>
         </z>
@@ -1120,7 +1120,7 @@
         <r type="discrete">
           <parameters>3.00649427775481 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>1.0398197263741882 1.0</parameters>
         </z>
@@ -1133,7 +1133,7 @@
         <r type="discrete">
           <parameters>3.6791134644303702 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.03150248790446079 1.0</parameters>
         </z>
@@ -1146,7 +1146,7 @@
         <r type="discrete">
           <parameters>3.7369244258405567 1.0</parameters>
         </r>
-        <phi parameters="0.001 6.2829" type="uniform"/>
+        <phi parameters="0.001 0.17455277777777778" type="uniform"/>
         <z type="discrete">
           <parameters>-0.0019375752848043485 1.0</parameters>
         </z>
